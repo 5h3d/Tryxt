@@ -40,7 +40,7 @@ export const abi = [
 		"inputs": [
 			{
 				"internalType": "address payable",
-				"name": "receiver",
+				"name": "reciever",
 				"type": "address"
 			},
 			{
@@ -54,7 +54,7 @@ export const abi = [
 				"type": "string"
 			}
 		],
-		"name": "transferFun",
+		"name": "transferFunc",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -85,7 +85,7 @@ export const abi = [
 					},
 					{
 						"internalType": "address",
-						"name": "receiver",
+						"name": "reciever",
 						"type": "address"
 					},
 					{
@@ -114,4 +114,4 @@ export const abi = [
 	}
 ]
 
-export const CONTRACT_ADDRESS = "0xd9145CCE52D386f254917e481eB44e9943F39138"
+export const CONTRACT_ADDRESS = "0x01D31d14Bad1a9B6Ed1b153578d4EdBC45efFA87"

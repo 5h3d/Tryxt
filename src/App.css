@@ -1,5 +1,5 @@
 body{
-  background-color: #001219;
+  /* background-color: #001219; */
 }
 .App{
   width: 100vw;
@@ -8,12 +8,9 @@ body{
   justify-content: center;
   align-items: center;
  position: relative;
-  /* background-color: rgb(105, 105, 0); */
 }
-.close{
-  /* background-color: green; */
-}
-.close__icon{
+
+/* .close__icon{
   font-size: 35px;
   cursor: pointer;
 }
@@ -26,7 +23,7 @@ body{
   -webkit-backdrop-filter: blur( 13.5px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
-  width: 300px;
+  width: 350px;
   height: 100vh;
   padding: 10px;
   color: #ffffff;
@@ -43,7 +40,7 @@ body{
 }
 .transaction__history-data{
   line-height: 2px;
-}
+} */
 /* .c
 ontainer{
   width: 300px;
@@ -53,29 +50,25 @@ ontainer{
   align-items: center;
   justify-content: center;
 } */
-.container-content{
+/* .container-content{
   width: 1000px;
   
   background-color: #1d3557;
-  /* background-color: #001219; */
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
+} */
 
-.wallet__details{
+/* .wallet__details{
   display: flex;
-  /* grid-template-columns: 1fr 1fr; */
   gap: 30px ;
   width: 100%;
   padding: 10px;
   justify-content: space-between;
 }
 .send__transaction{
-  /* background-color: aquamarine; */
   flex: 1;
-  /* width: 30px; */
   display:flex;
   flex-direction: column;
   gap: 10px;
@@ -90,16 +83,18 @@ ontainer{
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .card{
   /* flex: 1; */
   /* background-color: #001219; */
   /* background-color: aqua;
   width: 100%; */
 }
+/* small{
+  display: block;
+}
 .card__showcase{
   height: 200px;
-  /* min-width: 350px; */
   width: 450px;
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -110,8 +105,256 @@ ontainer{
   padding: 10px;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
   justify-content: flex-end;
   color: #ffffff;
   line-height: 5px;
+} */
+
+/* @media screen and (max-width: 400px){
+  .container-content{
+    width: 100%;
+    padding: 10px;
+  }
+  .wallet__details{
+    flex-direction: column;
+  }
+  .card__showcase{
+    width: 80%;
+  }
+
+} */
+.transaction__history{
+  position: absolute;
+  right: 0;
+  background-color: #3b186bac;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 300px;
+  height: 100vh;
+  padding: 10px;
+  color: #ffffff;
+  
+}
+.transaction__history-btn{
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.transaction__history-btn:hover{
+  
+  color: #f4efef;
+  text-decoration: underline;
+}
+.close__icon{
+  font-size: 30px;
+  cursor: pointer;
+}
+small{
+  display: block;
+  font-size: 11px;
+}
+.container-content{
+  /* background-color: antiquewhite; */
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.connect__wallet{
+  /* background-color:  #001219; */
+  width: 80%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+}
+.connect__wallet button{
+  padding: 10px 15px;
+  background-color: #212529;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.connect__wallet button:hover{
+  background-color: #343a40;
+}
+.wallet__details{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.send__transaction{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  background-color: #8338ec;
+  padding: 10px;
+}
+.send__transaction input{
+  width: 90%;
+  padding: 10px;
+  outline: none;
+}
+.send__transaction button{
+  width: 98%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.626);
+  /* box-shadow: 0 8px 16px 0 rgba(226, 226, 231, 0.37); */
+  /* backdrop-filter: blur( 13.5px ); */
+  /* -webkit-backdrop-filter: blur( 13.5px ); */
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.448);
+  cursor: pointer;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  background-color: #8338ec;
+  padding: 10px;
+}
+
+.card__showcase{
+  width: 95%;
+  background: rgba(255, 255, 255, 0.626);
+  box-shadow: 0 8px 16px 0 rgba(226, 226, 231, 0.37);
+  /* backdrop-filter: blur( 13.5px ); */
+  /* -webkit-backdrop-filter: blur( 13.5px ); */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.448);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  line-height: 5px;
+  padding: 5px;
+
+}
+.card__showcase h4{
+  font-size: 10px;
+}
+.card__showcase p{
+  font-size: 10px;
+}
+
+@media screen and (min-width: 400px){
+  .card__showcase h4{
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 500px){
+  .card__showcase h4{
+    font-size: 15px;
+  }
+  .card__showcase p{
+    font-size: 12px;
+  }
+  .send__transaction button{
+    width: 95%;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 700px){
+  /* .wallet__details {
+    background-color: #8338ec;
+  } */
+  .transaction__history{
+    width: 350px;
+  }
+  small{
+    font-size: 12px;
+  }
+  .send__transaction input{
+    width: 450px;
+  }
+  .send__transaction button{
+    width: 470px !important;
+    font-size: 16px;
+    /* background-color: #212529; */
+  }
+  .card__showcase{
+    width: 450px;
+  }
+  .card__showcase h4{
+    font-size: 15px;
+  }
+  .card__showcase p{
+    font-size: 12px;
+  }
+  .send__transaction button{
+    width: 95%;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1000px){
+  .wallet__details{
+    flex-direction: row;
+    background-color: #8338ec;
+    padding: 20px;
+    width: 90%;
+  }
+  .send__transaction{
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .send__transaction input{
+    width: 350px;
+  }
+  .send__transaction button{
+    width: 370px !important;
+    font-size: 16px;
+    /* background-color: #212529; */
+  }
+  .card__showcase{
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .wallet__details{
+    flex-direction: row;
+    background-color: #8338ec;
+    padding: 20px;
+    width: 850px;
+  }
+  .send__transaction{
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .send__transaction input{
+    width: 350px;
+  }
+  .send__transaction button{
+    width: 370px !important;
+    font-size: 16px;
+    /* background-color: #212529; */
+  }
+  .card__showcase{
+    width: 400px;
+  }
 }
